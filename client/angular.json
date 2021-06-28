@@ -73,9 +73,9 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "sslKey": "./ssl/server.key",
-              "sslCert": "./ssl/server.crt",
-              "ssl": true,
-              "browserTarget": "test:build"
+            "sslCert": "./ssl/server.crt",
+            "ssl": true,
+            "browserTarget": "test:build"
           },
           "configurations": {
             "production": {
@@ -115,5 +115,8 @@
       }
     }
   },
-  "defaultProject": "client"
+  "defaultProject": "client",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
